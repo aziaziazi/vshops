@@ -1,0 +1,22 @@
+<ul class="nav nav-tabs" role="tablist" id="module-single-tabs-0">
+	<li class="active">
+		<a href="#tab-single-featured-0" role="tab" data-toggle="tab" aria-expanded="true">
+			Featured
+		</a>
+	</li>
+	<li class="">
+		<a href="#tab-single-latest-0" role="tab" data-toggle="tab" aria-expanded="false">
+			New
+		</a>
+	</li>
+	<li class="">
+		<a href="#tab-single-specials-0" role="tab" data-toggle="tab" aria-expanded="false">
+			Specials
+		</a>
+	</li>
+	<li class="">
+		<a href="#tab-single-bestsellers-0" role="tab" data-toggle="tab" aria-expanded="false">
+			Bestsellers
+		</a>
+	</li>
+</ul>
