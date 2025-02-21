@@ -15,7 +15,8 @@ const Product = ({product}: {product: TProduct}) => (
         margin: "0 0 60px 0",
         padding: "0 24px",
       }}>
-      {product.image ? <img
+
+      <img
         style={{
           flex: "none",
           width: "117px",
@@ -23,9 +24,6 @@ const Product = ({product}: {product: TProduct}) => (
         }}
         src={product.image}
       />
-      : <svg style={{flex: "none"}} width="117px" height="117px" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <rect x="0" y="0" width="117" height="117" fill="lightgrey"/>
-      </svg>}
       <div
         style={{
           flex: "0 1 auto",
@@ -58,17 +56,6 @@ const Product = ({product}: {product: TProduct}) => (
         >
           {product.details}
           </div>
-        
-        <div
-          style={{
-            flex: "1 1 auto",
-            display: "flex",
-            alignItems: 'flex-end'
-          }}>
-          <h5 style={{margin: "0 5px 0 0", fontWeight: 'bold'}}>{product.price}</h5>
-          <i>{product.pricePerKg}</i>
-        </div>
-        
       </div>
     </div>
 )
