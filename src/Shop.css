@@ -1,0 +1,39 @@
+.shop_container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    font-size: 13px;
+    outline: none;
+}
+
+/* bootstrap sets a bolder style for ative links
+that break their alignement when selection change */
+.categoriesNav_link {
+    font-weight: initial !important;
+}
+
+.shop_info {
+    flex: 0 0 auto;
+    z-index: 1;
+    background-color: white;
+    padding: 12px 24px;
+}
+
+.shop_header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.products_list {
+    flex: 1 0 100px;
+    overflow-y: scroll;
+}

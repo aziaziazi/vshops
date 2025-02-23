@@ -6,6 +6,8 @@ import {Map,Marker} from '@vis.gl/react-maplibre';
 import Shop from './Shop';
 import { supermarkets, TSupermarket } from './data'
 
+import './App.css'
+
 const Logo = ({logo}) => {
   switch (logo) {
     case "./logo-carrefour":
@@ -34,7 +36,7 @@ const Logo = ({logo}) => {
 }
 
 export default function App() {
-  const [selectedShop, setSelectedShop] = useState<TSupermarket>(null );
+  const [selectedShop, setSelectedShop] = useState<TSupermarket>();
 
   const ShopMarkers = useMemo(
     () =>
@@ -48,25 +50,12 @@ export default function App() {
               e.originalEvent.stopPropagation();
               setSelectedShop(shop);
             }}
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              cursor: shop.products.length === 0 ? null : 'pointer',
-            }}
+            className={`marker_container${shop.products.length === 0 ? '' : ' marker_container--clickable'}`}
           >
             <Logo logo={shop.logo}/>
-            <div style={{
-                display: 'inline-block',
-                padding: "0 5px",
-                fontSize: "13px",
-                fontWeight: 'bold',
-                lineHeight: "18px",
-                borderRadius: "10px",
-                backgroundColor: "#fff",
-              }}>
-                {shop.fakeNumberOfProducts}
-              </div>
+            <div className='marker_chip'>
+              {shop.fakeNumberOfProducts}
+            </div>
           </Marker>
         </React.Fragment>
       )),
