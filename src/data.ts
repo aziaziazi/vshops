@@ -57,6 +57,27 @@ export const supermarkets: TSupermarket[] = [
         category: "Frais"
       },
       {
+        name: "Bédouze passion",
+        weight: "120 comprimés",
+        details: "vitamine b12 bio les biofreres",
+        image: "./vitamine-b12-bedouze-bio-passion-54g-les-biofreres.jpeg",
+        category: "Santé"
+      },
+      {
+        name: "Bédouze poire-vanille",
+        weight: "54g",
+        details: "vitamine b12 bio les biofreres",
+        image: "./vitamine-b12-bedouze-bio-poire-vanille-54g-les-biofreres.jpeg",
+        category: "Santé"
+      },
+      {
+        name: "Bédouze framboise",
+        weight: "120 comprimés",
+        details: "vitamine b12 bio les biofreres",
+        image: "./vitamine-b12-bedouze-bio-framboise-54g-les-biofreres.jpeg",
+        category: "Santé"
+      },
+      {
         name: "Veg1 90 orange",
         weight: "90 comprimés",
         details: "La VEG1 Orange vous apporte toutes les vitamines quotidiennes nécessaires au bon équilibre de votre corps, notamment la vitamine B12, peu présente dans l'alimentation vegan. Un complément multivitvitaminé au bon goût de cassis, adapté spécifiquement aux végétaliens.",
@@ -83,28 +104,7 @@ export const supermarkets: TSupermarket[] = [
         details: "La VEG1 Cassis vous apporte toutes les vitamines quotidiennes nécessaires au bon équilibre de votre corps, notamment la vitamine B12, peu présente dans l'alimentation vegan. Un complément multivitvitaminé au bon goût de cassis, adapté spécifiquement aux végétaliens.",
         image: "./multivitamine-b12-cassis-180-veg-1.jpeg",
         category: "Santé"
-      },
-      {
-        name: "Bédouze framboise",
-        weight: "120 comprimés",
-        details: "vitamine b12 bio les biofreres",
-        image: "./vitamine-b12-bedouze-bio-framboise-54g-les-biofreres.jpeg",
-        category: "Santé"
-      },
-      {
-        name: "Bédouze passion",
-        weight: "120 comprimés",
-        details: "vitamine b12 bio les biofreres",
-        image: "./vitamine-b12-bedouze-bio-passion-54g-les-biofreres.jpeg",
-        category: "Santé"
-      },
-      {
-        name: "Bédouze poire-vanille",
-        weight: "54g",
-        details: "vitamine b12 bio les biofreres",
-        image: "./vitamine-b12-bedouze-bio-poire-vanille-54g-les-biofreres.jpeg",
-        category: "Santé"
-      },
+      }
     ],
   },
   {
