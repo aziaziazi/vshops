@@ -17,92 +17,94 @@ export type TSupermarket = {
   products: TProduct[];
   fakeNumberOfProducts: number;
   logo: string;
+  markerLogo: string;
 }
 
 export const supermarkets: TSupermarket[] = [
   {
-    name: 'Carrefour',
+    name: 'Carrefour Express',
     address: '135 Bd Voltaire, 75011 Paris',
     latitude: 48.86432119245315,
     longitude: 2.3695853582626327,
     fakeNumberOfProducts: 426,
-    logo: './logo-carrefour',
+    logo: './shop_logos/logo_carrefour.svg',
+    markerLogo: './shop_logos/marker_logo_carrefour.svg',
     products: [
       {
         name: "Tofu fumé",
-        weight: "200g",
+        weight: "Taïfun - 200g",
         details: "Tofu* 93% (GRAINES DE SOJA* 55%, eau, agents de coagulation : chlorure de magnésium, sulfate de calcium), sauce de soja* (eau, GRAINES DE SOJA*, BLÉ*, sel marin), fumé par friction.",
-        image: "./tofu-fume-taifun.jpeg",
+        image: "./products/tofu-fume-taifun.jpeg",
         category: "Frais"
       },
       {
         name: "Tofu fumé amande et sésame",
-        weight: "200g",
+        weight: "Taïfun - 200g",
         details: "Tofu* 87% (GRAINES DE SOJA* 55%, eau, agents de coagulation : chlorure de magnésium, sulfate de calcium), sauce de soja* (eau, GRAINES DE SOJA*, BLÉ*, sel marin), AMANDES* 3,4%, SÉSAME* 3,1%, fumé par friction.",
-        image: "./tofu-fume-amande-sesame-taifun.jpeg",
+        image: "./products/tofu-fume-amande-sesame-taifun.jpeg",
         category: "Frais"
       },
       {
         name: "Tofu basilic",
-        weight: "200g",
+        weight: "Taïfun - 200g",
         details: "Tofu* 88% (GRAINES DE SOJA* 55%, eau, agents de coagulation: chlorure de magnésium, sulfate de calcium), huile d'olives extra vergine*, basilic* 4,2%, bouillon de légumes* (sel marin, extrait de levure*, huile de tournesol*, poireaux*, carottes*, CÉLERI*, macis*, noix de muscade*, persil*), ail des ours*, persil*.",
-        image: "./tofu-basilic-taifun.jpeg",
+        image: "./products/tofu-basilic-taifun.jpeg",
         category: "Frais"
       },
       {
-        name: "Tempeh Kédelaï",
-        weight: "200g",
+        name: "Tempeh Bloc",
+        weight: "Kédelaï - 200g",
         details: "Bloc de soja fermenté naturellement par un champignon, le rhizopus, riche en protéines végétales et en probiotiques",
-        image: "./tempeh-kedalai.jpeg",
+        image: "./products/tempeh-kedalai.jpeg",
         category: "Frais"
       },
       {
         name: "Bédouze passion",
-        weight: "120 comprimés",
-        details: "vitamine b12 bio les biofreres",
-        image: "./vitamine-b12-bedouze-bio-passion-54g-les-biofreres.jpeg",
+        weight: "Les Biofreres - 54g",
+        details: "vitamine b12 bio saveur passion",
+        image: "./products/vitamine-b12-bedouze-bio-passion-54g-les-biofreres.jpeg",
         category: "Santé"
       },
       {
         name: "Bédouze poire-vanille",
-        weight: "54g",
-        details: "vitamine b12 bio les biofreres",
-        image: "./vitamine-b12-bedouze-bio-poire-vanille-54g-les-biofreres.jpeg",
+        weight: "Les Biofreres - 54g",
+        details: "vitamine b12 bio saveur poire vanille",
+        image: "./products/vitamine-b12-bedouze-bio-poire-vanille-54g-les-biofreres.jpeg",
         category: "Santé"
       },
       {
         name: "Bédouze framboise",
-        weight: "120 comprimés",
-        details: "vitamine b12 bio les biofreres",
-        image: "./vitamine-b12-bedouze-bio-framboise-54g-les-biofreres.jpeg",
+        weight: "Les Biofreres - 54g",
+        details: "vitamine b12 bio saveur framboise",
+        image: "./products/vitamine-b12-bedouze-bio-framboise-54g-les-biofreres.jpeg",
         category: "Santé"
       },
       {
         name: "Veg1 90 orange",
-        weight: "90 comprimés",
+        weight: "The Vegan Society - 90c",
         details: "La VEG1 Orange vous apporte toutes les vitamines quotidiennes nécessaires au bon équilibre de votre corps, notamment la vitamine B12, peu présente dans l'alimentation vegan. Un complément multivitvitaminé au bon goût de cassis, adapté spécifiquement aux végétaliens.",
-        image: "./multivitamine-b12-orange-90-veg-1.jpeg",
+        image: "./products/multivitamine-b12-orange-90-veg-1.jpeg",
         category: "Santé"
       },
       {
         name: "Veg1 180 orange",
-        weight: "180 comprimés",
+        weight: "The Vegan Society - 180c",
         details: "La VEG1 Orange vous apporte toutes les vitamines quotidiennes nécessaires au bon équilibre de votre corps, notamment la vitamine B12, peu présente dans l'alimentation vegan. Un complément multivitvitaminé au bon goût de cassis, adapté spécifiquement aux végétaliens.",
-        image: "./multivitamine-b12-orange-180-veg-1.jpeg",
+        image: "./products/multivitamine-b12-orange-180-veg-1.jpeg",
         category: "Santé"
       },
       {
         name: "Veg1 90 cassis",
-        weight: "90 comprimés",
+        weight: "The Vegan Society - 90c",
         details: "La VEG1 Cassis vous apporte toutes les vitamines quotidiennes nécessaires au bon équilibre de votre corps, notamment la vitamine B12, peu présente dans l'alimentation vegan. Un complément multivitvitaminé au bon goût de cassis, adapté spécifiquement aux végétaliens.",
-        image: "./multivitamine-b12-cassis-90-veg-1.jpeg",
+        image: "./products/multivitamine-b12-cassis-90-veg-1.jpeg",
         category: "Santé"
       },
       {
         name: "Veg1 180 cassis",
-        weight: "180 comprimés",
+        weight: "The Vegan Society - 180c",
         details: "La VEG1 Cassis vous apporte toutes les vitamines quotidiennes nécessaires au bon équilibre de votre corps, notamment la vitamine B12, peu présente dans l'alimentation vegan. Un complément multivitvitaminé au bon goût de cassis, adapté spécifiquement aux végétaliens.",
-        image: "./multivitamine-b12-cassis-180-veg-1.jpeg",
+        image: "./products/multivitamine-b12-cassis-180-veg-1.jpeg",
         category: "Santé"
       }
     ],
@@ -114,7 +116,8 @@ export const supermarkets: TSupermarket[] = [
     longitude: 2.368065,
     products: [],
     fakeNumberOfProducts: 846,
-    logo: './logo-franprix',
+    logo: './shop_logos/logo_franprix.svg',
+    markerLogo: './shop_logos/marker_logo_franprix.svg',
   },
   {
     name: 'Intermarché Express Goncourt',
@@ -123,13 +126,15 @@ export const supermarkets: TSupermarket[] = [
     longitude: 2.371521369808261,
     products: [],
     fakeNumberOfProducts: 309,
-    logo: './logo-intermarché'
+    logo: './shop_logos/logo_intermarché.svg',
+    markerLogo: './shop_logos/marker_logo_intermarché.svg',
+
   },
 ];
 
 export const defaultProduct = {
-  name: "PRODUCT NAME",
-  weight: "_ g",
-  details: "DESCRIPTION, INDGREDIENTS...",
-  image: "./default_image.svg",
+  name: "Produit",
+  weight: "Marque - poids",
+  details: "Description, ingredients.",
+  image: "./products/default_image.svg",
 }

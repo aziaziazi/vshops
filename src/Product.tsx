@@ -8,9 +8,9 @@ const Product = ({product}: {product: TProduct}) => (
     <div className='product_card'>
       <img className='product_image' src={product.image}/>
       <div className='product_info'>
-        <h4 className='product_title'>{product.name}</h4>
-        <div>{product.weight}</div>
-        <div className='product_detail'>
+        <h4 className='product_title multiple-line-break-2'>{product.name}</h4>
+        <div className='product_weight'>{product.weight}</div>
+        <div className='product_detail multiple-line-break-3'>
           {product.details}
           </div>
       </div>
