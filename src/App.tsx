@@ -8,9 +8,17 @@ import { supermarkets, TSupermarket } from './data'
 
 import './App.css'
 
+const mapStyles =[
+  "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
+  "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json",
+  "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
+]
+
 export default function App() {
   const [selectedShop, setSelectedShop] = useState<TSupermarket>();
+  const [selectedStyle, setselectedStyle] = useState<0 | 1 | 2>(0)
 
+  
   const ShopMarkers = useMemo(
     () =>
       supermarkets.map((shop, index) => (
@@ -39,10 +47,17 @@ export default function App() {
     <>
       {selectedShop ? <Shop onClose={e => {setSelectedShop(null); }} shop={selectedShop}/>:null}
       <Map initialViewState={{ latitude: 48.8666549264761, longitude: 2.3704176056870314, zoom: 14 }}
-        mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
-        // mapStyle="https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json"
-        // mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
+        mapStyle={mapStyles[selectedStyle]}
       >
+        {/* invisible bottom left button to udpate map style */}
+        <div
+          style={{position: "absolute", top: 0, left: 0, width: 50, height: 50, backgroundColor: "#ffffff09"}}
+          onClick={() => setselectedStyle(prevStyle => {
+            if (prevStyle === 0) return 1
+            if (prevStyle === 1) return 2
+            return 0
+          })}
+        />
         {ShopMarkers}
       </Map>
     </>
