@@ -19,10 +19,31 @@
 }
 
 .categoriesNav {
+    margin: 0 -24px ;
     align-items: center;
     flex-wrap: nowrap;
+    overflow-x: scroll;
+    row-gap: 100px;
+    column-gap: 15px;
 }
 
+.categoriesNav::before, .categoriesNav::after {
+    content: '';
+    flex: 0 0 24px;
+}
+
+/* remove scrollbar for menu */
+.categoriesNav {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.categoriesNav::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.categoriesNav_item {
+    white-space: nowrap
+}
 /* bootstrap sets a bolder style for ative links
 that break their alignement when selection change */
 .categoriesNav_link {

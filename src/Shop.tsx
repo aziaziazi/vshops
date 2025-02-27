@@ -16,7 +16,7 @@ export default function Shop({onClose, shop}: {shop: TSupermarket, onClose: any}
     <div className='shop_container'>
       <div className='shop_info'>
         <div className='shop_header'>
-            <i onClick={onClose} className="shop_backButton bi bi-caret-left"></i>
+          <i onClick={onClose} className="shop_backButton bi bi-caret-left" />
           <div>
             <h3  className='shop_name'>{shop.name}</h3>
             <img className='shop_logo' src={shop.logo}/>
@@ -36,7 +36,7 @@ export default function Shop({onClose, shop}: {shop: TSupermarket, onClose: any}
             className='categoriesNav'
         >
           {categories.map(category => (
-            <Nav.Item key={category}>
+            <Nav.Item key={category} className='categoriesNav_item'>
               <Nav.Link
                 className='categoriesNav_link'
                 eventKey={category}

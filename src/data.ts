@@ -1,5 +1,5 @@
-export const categories: TCategory[] = ['Frais', "Santé", "Boissons", "Salé", "Sucré"]
-export type TCategory =    'Frais'| "Santé"| "Boissons"| "Salé"| "Sucré";
+export const categories: TCategory[] = ['Frais', "Santé", "Boissons", "Épicerie Salé", "Épicerie Sucré", "Surgelés", "Crèmerie"]
+export type TCategory =    'Frais'| "Santé"| "Boissons"| "Épicerie Salé"| "Épicerie Sucré" | "Surgelés" | "Crèmerie"
 
 export type TProduct = {
   name: string;
