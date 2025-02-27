@@ -1,10 +1,9 @@
 .shop_container {
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    z-index: 100;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -12,6 +11,11 @@
     background: #fff;
     font-size: 13px;
     outline: none;
+    overflow: hidden;
+    /* Fix for iOS scroll issues */
+    position: fixed;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 .categoriesNav {
