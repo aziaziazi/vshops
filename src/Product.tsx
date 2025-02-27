@@ -4,7 +4,7 @@ import { TProduct } from './data'
 
 import './Product.css'
 
-const Product = ({product}: {product: TProduct}) => {
+const Product = ({product, onclose}: {product: TProduct, onclose?: () => void}) => {
   const [isOpen, setIsOpen] = React.useState<boolean>(false)
   const toogleOpenProduct = () => setIsOpen(prevState => !prevState)
 
@@ -20,6 +20,12 @@ const Product = ({product}: {product: TProduct}) => {
         <div className={`product_detail ${isOpen ? '' : 'multiple-line-break-3'}`}>
           {product.details}
         </div>
+        {isOpen &&
+          <div className='product_location_map' >
+            <div>Autres magasins</div>
+            <img src='./product_location_map.png' onClick={() => {onclose()}}/>
+          </div>
+        }
       </div>
     </div>
 )}

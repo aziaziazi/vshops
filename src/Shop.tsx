@@ -51,11 +51,11 @@ export default function Shop({onClose, shop}: {shop: TSupermarket, onClose: any}
       </div>
       <div className='products_list'>
         {selectedProducts.length > 0
-          ? selectedProducts.map(product => <Product product={product} key={`product-${product.name}`}/>)
+          ? selectedProducts.map(product => <Product onclose={onClose} product={product} key={`product-${product.name}`}/>)
           : <React.Fragment>
-              <Product product={defaultProduct} key={"def-p-1"}/>
-              <Product product={defaultProduct} key={"def-p-2"}/>
-              <Product product={defaultProduct} key={"def-p-3"}/>
+              <Product product={defaultProduct} key={"def-p-1"} onclose={onClose}/>
+              <Product product={defaultProduct} key={"def-p-2"} onclose={onClose}/>
+              <Product product={defaultProduct} key={"def-p-3"} onclose={onClose}/>
             </React.Fragment>
         }
       </div>

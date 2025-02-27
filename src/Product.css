@@ -1,6 +1,7 @@
 .product_card {
     position: relative;
     width: 100%;
+    max-width: 500px;
     flex: 1 0 117px;
     display: flex;
     flex-direction: row;
@@ -86,6 +87,13 @@
     transform: rotate(180deg);
 }
 
-.product_card_isOpen.product_card {
-    /* flex-basis: 200px; */
+
+.product_location_map {
+    margin-top: 20px;
+    color: #252525;
+}
+
+.product_location_map img {
+    max-width: 100%;
+    margin-top: 5px;
 }
