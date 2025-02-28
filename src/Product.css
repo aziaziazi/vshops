@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     max-width: 500px;
-    flex: 1 0 117px;
+    flex: 0 0 117px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -81,6 +81,7 @@
     rotate: 0deg;
     transition: .5s ease-in-out;
     color: #e6e6e6;
+    cursor: pointer;
 }
 
 .product_card_isOpen .product_seeMore {
